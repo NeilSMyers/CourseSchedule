@@ -5,13 +5,11 @@ class CourseLibrary extends Component {
 
   constructor(props) {
     super(props)
-
-    this.renderCourse = this.renderCourse.bind(this);
   }
 
   renderCourse(course) {
     return (
-      <li key={this.index++} className="course">
+      <li key={course.title} className="course">
         <div className="course__info">
           <div className="course__title-contatiner">
             <div className="course__title">{course.title}</div>
@@ -26,7 +24,7 @@ class CourseLibrary extends Component {
   }
 
   render() {
-    this.index = 0
+
     return (
       <ul>
         {this.props.courses.map(this.renderCourse)}
@@ -36,7 +34,7 @@ class CourseLibrary extends Component {
 }
 
 function mapStateToProps(state) {
-  console.log(`state: ${JSON.stringify(state.courses)}`);
+  console.log(`state courses are : ${JSON.stringify(state.courses)}`)
   return {courses: state.courses}
 }
 

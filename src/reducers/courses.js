@@ -1,6 +1,5 @@
 export default function(state = [], action) {
   switch(action.type) {
-
     default:
       return [
         {
@@ -9,7 +8,7 @@ export default function(state = [], action) {
         },
         {
           "title":"UX for Developers", 
-          "description":"This User Experience(UX) course examines how to develop a system for approaching application development and enhancing the experience for users"
+          "description":"This User Experience(UX) course examines how to develop a system for approaching application development and enhancing the experience for users."
         }
       ]
   }
