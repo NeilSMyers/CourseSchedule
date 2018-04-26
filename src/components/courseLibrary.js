@@ -45,6 +45,7 @@ function mapStateToProps(state) {
   console.log(`state courses are : ${JSON.stringify(state.courses)}`)
   return {courses: state.courses}
 }
+
 function mapDispatchToProps(dispatch) {
   return {
     fetchCourses:()=> {
@@ -52,4 +53,5 @@ function mapDispatchToProps(dispatch) {
     }
   }
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(CourseLibrary);
