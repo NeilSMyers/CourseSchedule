@@ -23,7 +23,7 @@ class CourseLibrary extends Component {
           </div>
         </div>
         <div className="course__description">
-          <h6 className="course__desciption-title">Course Description</h6>
+          <h6 className="course__description-title">Course Description</h6>
           <p>{course.description}</p>
         </div>
       </li>
