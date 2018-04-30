@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {connect, dispatch} from "react-redux";
-import { fetchCourses, addCourse } from '../actions'
+import { fetchCourses, addCourse, removeCourse } from '../actions'
 
 class CourseLibrary extends Component {
 
@@ -55,7 +55,7 @@ function mapDispatchToProps(dispatch) {
       dispatch(fetchCourses())
     },
     addCourse:(course)=> {
-      dispatch(addCourse())
+      dispatch(addCourse(course))
     },
     removeCourse:(course)=> {
       dispatch(removeCourse(course))
