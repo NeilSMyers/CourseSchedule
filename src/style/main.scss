@@ -9,9 +9,28 @@
 
 .library {
   flex-grow: 2;
-  width: 70%;
+  height: 100vh;
+  width: 62%;
   padding: 6rem;
   z-index: 1;
+}
+
+.schedule {
+  flex-grow: 1;
+  height: 100vh;
+  width: 38%;
+  background: linear-gradient(118.95deg, #6f48ce 0%, #32cbe8 100%);
+  text-align: center;
+  padding: 12rem 6rem;
+}
+
+.schedule__header {
+  border: none;
+  border-left: 1px solid white;
+  color: white;
+  font-size: 20px;
+  font-family: 'Alegreya', serif;
+  line-height: 27px;
 }
 
 .library__header {
@@ -22,12 +41,6 @@
   font-family: Alegreya, serif;
   font-size: 34px;
   font-weight: bold;
-}
-
-.schedule {
-  flex-grow: 1;
-  width: 30%;
-  background: linear-gradient(118.95deg, #6f48ce 0%, #32cbe8 100%);
 }
 
 ul {
@@ -58,19 +71,6 @@ ul li {
   font-family: Alegreya;
   font-size: 16px;
   font-weight: bold;
-}
-
-.slot__course {
-  background-color: white;
-  border: 1px solid rgba(255,255,255,0.6)
-}
-
-.slot__empty {
-  opacity: .75;
-  background-color: transparent;
-  border: 1px solid rgba(255,255,255,0.6);
-  border-style: dashed;
-  color: white;
 }
 
 .show-content {
