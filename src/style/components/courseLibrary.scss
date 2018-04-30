@@ -86,19 +86,18 @@
   width: 32px;
   border-radius: 16px;
   position: relative;
-
   &:after,
   &:before {
     content: '';
     display: block;
     background-color: white;
     @include position-center;
+    transition: all .3s ease;
   }
   &:before {
     height: 1em;
     width: .2em;
   }
-
   &:after {
     height: .2em;
     width: 1em;
@@ -111,13 +110,10 @@
 
 .course__remove {
   @include add-button;
-  transform: rotate(45deg);
-
-  // &:before {
-  //   transform: translate(-50%, -50%) rotate(45deg);
-  // }
-
-  // &:after {
-  //   transform: translate(-50%, -50%) rotate(45deg);
-  // }
+  &:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:after {
+    transform: translate(-50%, -50%) rotate(-135deg);
+  }
 }
